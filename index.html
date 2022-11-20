@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>car prize</title>
+  </head>
+  <body>
+    <div class="card">
+      <h1>car prize</h1>
+      <form action="#">
+        <div class="input-item">
+          <label for="amount"> car prize: </label>
+          <input type="text" id="amount" />
+        </div>
+
+        <div class="input-item">
+          <label for="discount-percentage">instant payment 20%:</label>
+          <input type="text" id="discount_percentage" />
+        </div>
+
+        <div class="input-item">
+          <label for="discount-amount"> due payment </label>
+          <input type="text" id="discount_amount" disabled />
+        </div>
+
+        <!-- how many times -->
+        <div class="input-item">
+          <label for="installment time"> How many times: </label>
+          <input type="times" id="times" />
+        </div>
+
+        <!-- interst -->
+        <div class="input-item">
+          <label for="interst" aria-disabled="true"> interst rate:</label>
+          <input type="text" id="interst_rate" disabled />
+        </div>
+
+        <div class="input-item" onsubmit="return add();">
+          <label for="totalDue" aria-disabled="true"> total Due:</label>
+          <input type="text" id="result" disabled />
+          <!-- <button id="calc" type="button">Add</button> -->
+          <!-- <button type="button" id="btn">Clear</button> -->
+        </div>
+
+        <!-- total prize -->
+        <div class="input-item" onsubmit="return total();">
+          <label for="total prize" aria-disabled="true"> total prize:</label>
+          <input type="text" id="totalamount" disabled />
+          <!-- <button id="calc" type="button">Add</button> -->
+          <!-- <button type="button" id="btn">Clear</button> -->
+        </div>
+
+        <button type="submit" class="calculate" id="">calculate</button>
+        <br /><br />
+        <button type="reset">Clear</button>
+      </form>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
